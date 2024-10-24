@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Expandia.io</title>
-    </head>
-    <body>
-        <div>oi</div>
-        <canvas id="'gameCanvas" width="800" height="600"></canvas>
-        <script src="server.js"></script>
-        <script src="script.js"></script>
-    </body>
+<html>
+<head>
+    <style>
+        body {
+            background: #a0a0a0;
+        }
+        canvas {
+            margin: 50px;
+            border: 2px solid black;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas1" width="550px" height="550px"></canvas>
+
+    <script src="node_modules/socket.io/socket.io.js"></script> <!-- Esta linha carrega a biblioteca Socket.io -->
+    <script src="script.js"></script>
+</body>
 </html>
